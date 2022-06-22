@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="navbar.css">
 </head>
 <body>
+    <div class="theme">
+        <a onclick="changeTheme()">
+            <span class="iconThemeLight" id="iconThemeLight">
+                <ion-icon name="sunny-outline"></ion-icon>
+            </span>
+            <span class="iconThemeDark">
+                <ion-icon name="moon-outline"></ion-icon>
+            </span>
+        </a>
+    </div>
     <div class="navigation">
         <ul>
             <li class="list active">
@@ -55,6 +65,14 @@
     </div>
     <script>
         const list = document.querySelectorAll('.list');
+        function changeTheme(){
+            console.log(document.getElementById('iconThemeLight').style)
+            if(document.getElementById('iconThemeLight').style.color == ('var(--darkTheme)' || document.getElementById('iconThemeLight').style.color == " ")){
+                document.getElementById('iconThemeLight').style.color = ('var(--whiteTheme)')
+            } else{
+                document.getElementById('iconThemeLight').style.color = ('var(--darkTheme)')
+            }
+        }
         function activeLink(){
             list.forEach((item) => 
                 item.classList.remove('active'));
