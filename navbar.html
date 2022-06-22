@@ -9,14 +9,14 @@
 </head>
 <body>
     <div class="theme">
-        <a onclick="changeTheme()">
+        <!-- <button onclick="changeTheme()">
             <span class="iconThemeLight" id="iconThemeLight">
                 <ion-icon name="sunny-outline"></ion-icon>
             </span>
             <span class="iconThemeDark" id="iconThemeDark">
                 <ion-icon name="moon-outline"></ion-icon>
             </span>
-        </a>
+        </button> -->
     </div>
     <div class="navigation">
         <ul>
@@ -65,16 +65,14 @@
     </div>
     <script>
         const list = document.querySelectorAll('.list');
-        function changeTheme(){
-            if(document.getElementById('iconThemeLight').style.color == ('var(--darkTheme)' || document.getElementById('iconThemeLight').style.color == " ")){
-                document.getElementById('iconThemeLight').style.color = ('var(--whiteTheme)')
-                document.getElementById('iconThemeDark').style.color = ('var(--darkTheme)')
-            } else{
-                document.getElementById('iconThemeLight').style.color = ('var(--darkTheme)')
-                document.getElementById('iconThemeDark').style.color = ('var(--whiteTheme)')
-            }
+        // function changeTheme(){
+        //     let darkTheme = document.documentElement.style.getPropertyValue('--darkTheme')
+        //     let whiteTheme = document.documentElement.style.getPropertyValue('--whiteTheme')
+        //     console.log(darkTheme)
+        //     document.documentElement.style.setProperty('--darkTheme', whiteTheme)
+        //     document.documentElement.style.setProperty('--whiteTheme', darkTheme)
+        // }
 
-        }
         function activeLink(){
             list.forEach((item) => 
                 item.classList.remove('active'));

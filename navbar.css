@@ -20,7 +20,7 @@ body{
     background: var(--darkTheme);
 }
 
-.theme{
+/* .theme{
     text-decoration: none;
     color: #fff;
     cursor: pointer;
@@ -36,18 +36,18 @@ body{
     display: flex;
 }
 
-.theme a .iconThemeDark{
+.theme button .iconThemeDark{
     position: absolute;
     display: block;
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: var(--lightTheme);
+    color: var(--whiteTheme);
     margin-left: -12px;
     margin-top: -14px;
 }
 
-.theme a .iconThemeLight{
+.theme button .iconThemeLight{
     position: absolute;
     display: block;
     font-size: 1.5em;
@@ -56,7 +56,7 @@ body{
     color: var(--darkTheme);
     margin-left: -12px;
     margin-top: -14px;
-}
+} */
 
 .navigation{
     width: 400px;
